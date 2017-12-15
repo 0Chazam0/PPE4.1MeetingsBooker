@@ -1,56 +1,45 @@
 package com.test.beans;
 
-import java.sql.Timestamp;
-
 public class Utilisateur {
 
-	private Long      id;
+	private String    EMAIL;
 
-    private String    email;
+    private String    NOM;
 
-    private String    motDePasse;
+    private String    PRENOM;
 
-    private String    nom;
+    private String    MDP;
 
-    private Timestamp dateInscription;
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId( Long id ) {
-        this.id = id;   
-    }
-    
-    public void setEmail(String email) {
-    	this.email = email;
-    }
-    
-    public String getEmail() {
-    	return email;
-    }
-
-    public void setMotDePasse(String motDePasse) {
-    	this.motDePasse = motDePasse;
-    }
-    
-    public String getMotDePasse() {
-    	return motDePasse;
-    }
-
-    public void setNom(String nom) {
-    	this.nom = nom;
-    }
-    
-    public String getNom() {
-    	return nom;
-    }
-
-	public Timestamp getDateInscription() {
-		return dateInscription;
+	public String getPRENOM() {
+		return PRENOM;
 	}
 
-	public void setDateInscription(Timestamp dateInscription) {
-		this.dateInscription = dateInscription;
+	public void setPRENOM(String pRENOM) {
+		PRENOM = pRENOM;
 	}
+
+	public String getEMAIL() {
+		return EMAIL;
+	}
+
+	public void setEMAIL(String eMAIL) {
+		EMAIL = eMAIL;
+	}
+
+	public String getNOM() {
+		return NOM;
+	}
+
+	public void setNOM(String nOM) {
+		NOM = nOM;
+	}
+
+	public String getMDP() {
+		return MDP;
+	}
+
+	public void setMDP(String mDP) {
+		MDP = mDP;
+	}
+
 }
